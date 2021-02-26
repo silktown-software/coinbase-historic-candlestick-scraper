@@ -10,7 +10,7 @@ from tqdm import tqdm
 import argparse
 import cbpro
 import pandas
-from config import Config
+from .config import Config
 
 
 class Granularity(Enum):
@@ -191,7 +191,7 @@ def get_historic_candles_for_product(
             progress_bar.desc = f'Processing {product["id"]} : Record count {total_record_count}'
 
 
-if __name__ == '__main__':
+def scrape_candlestick_data():
     try:
         parser = argparse.ArgumentParser(description='Gets the historical candlestick data from coinbase')
 
@@ -220,3 +220,7 @@ if __name__ == '__main__':
     # except Exception as ex:
     #     print(ex)
     #     print(ex)
+
+
+if __name__ == '__main__':
+    scrape_candlestick_data()

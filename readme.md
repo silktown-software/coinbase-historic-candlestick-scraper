@@ -1,4 +1,4 @@
-# Coinbase historic candlestick history scraper
+# Coinbase historic candlestick scraper
 
 This is a simple data collection script for getting historical candle stick data from coinbase pro's public api.
 
