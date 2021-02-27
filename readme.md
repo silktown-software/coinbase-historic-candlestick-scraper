@@ -69,7 +69,7 @@ optional arguments:
 The application has a preset time period if just given a granularity data. You must specify the `-g` option.
 
 ```
-$ python historic_candle_stick_data.py -g 1m
+$ cb-candlesticks -g 1m
 ```
 
 The preset time periods are based on what **roughly** makes sense for a given granularity level. 
@@ -80,7 +80,7 @@ You can specify a date and time to scrap results against.
 The string format is quite simple Y-m-d e.g. 14<sup>th</sup> Feb 2021 is `2021-02-14`  
 
 ```
-$ python historic_candle_stick_data.py -g 1m -s 2021-02-13 -e 2021-02-14
+$ cb-candlesticks -g 1m -s 2021-02-13 -e 2021-02-14
 ```
 
 **WARNING**: If you set a very small granularity, and a large date range this script may take quite a while to complete.
