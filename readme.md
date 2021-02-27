@@ -28,9 +28,9 @@ The script can be installed locally with setup tools and doing the following:
 
 The default configuration:
 
-* **host**: localhost,
-* **port**: 27017,
-* **database_name**: coinbase-pro,
+* **host**: localhost
+* **port**: 27017
+* **database_name**: coinbase-pro
 * **collection_suffix**: historical-candlestick-data
 
 You can override these settings with a dotfile called `.cb-candlesticks.ini` in the user's home directory.
@@ -48,7 +48,7 @@ collection_suffix=<collection-suffix>
 The script is fairly straight forward to run.
 
 ```
-$ python historic_candle_stick_data.py -h
+$ cb-candlesticks -h
 usage: historic_candle_stick_data.py [-h] -g {1m,5m,15m,1hr,6h,1d} [-s START] [-e END]
 
 Gets the historical candlestick data from coinbase
